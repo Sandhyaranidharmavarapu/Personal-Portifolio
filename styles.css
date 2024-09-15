@@ -1,0 +1,325 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    color: whitesmoke;
+}
+nav{
+    position: relative;
+}
+
+nav div{
+    background-color:  rgb(250, 237, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+nav h5{
+    color: rgb(254, 0, 203);
+    font-family: serif;
+    font-weight: 600;
+    font-size: large;
+    font-style: oblique;
+    transition: .4s ease-in-out;
+}
+nav h5:hover{
+    text-shadow: 0 0 15px rgb(254, 0, 203);
+    transform: scaleX(1.1);
+}
+nav div a{
+    color: black;
+    font-weight: 600;
+}
+.home{
+    color: rgb(254, 0, 203);
+}
+
+nav div a:hover{
+    color: rgb(254, 0, 203);
+}  
+
+
+/*Home*/
+
+.home_container{
+    background-color:#080729;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    
+}
+.div_cont{
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+div h1{
+    font-weight: bold;
+}
+.span{
+    color: rgb(254, 0, 203);
+    transition: .4s ease-in-out;
+}
+.span:hover{
+    text-shadow: 0 0 35px ;
+}
+div p{
+    font-size: 15px;
+    
+}
+.home_container img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: fill;
+    box-shadow: 0px 0px 60px rgb(254, 0, 203);
+    
+}
+.icons i{
+    margin-left: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(254, 0, 203);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    transition: .4s ease-in-out;
+}
+.icons i:hover{
+    background-color: rgb(254, 0, 203);
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgb(254, 0, 203);
+} 
+
+@media (min-width:700px) {
+    .home_container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .home_container img{
+        margin-left: 20px;
+        height: 400px;
+        width: 400px;
+        position: relative;
+        order: 2;
+        
+    }
+}
+
+/*about*/
+.about_containr{
+    background-color: #14133a;
+    padding: 20px;
+}
+.about_containr h1{
+    text-align: center;
+    color: #fe00cb;
+}
+.about_bg1,
+.about_bg2,
+.about_bg3{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.education_bg1{
+    background-color: #1f1f37;
+    padding: 25px;
+    border-radius: 10px;
+    color: whitesmoke;
+    transition: .6s ease-in-out;
+    width: 400px;
+}
+.education_bg1:hover{
+    background-color: #fc56da ;
+    transform: translateY(-2px) scale(1.03);
+}
+.education_bg1 div{
+    display: flex;
+    justify-content: space-between;
+}
+.education_bg1 div span{
+    color:#fe00cb ;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width:700px) {
+    .about_bg1{
+        align-items: flex-start;
+        padding-left: 16%;
+    }
+    .about_bg2{
+        align-items: flex-end;
+        padding-right: 16%;
+    }
+    .about_bg3{
+        align-items: flex-start;
+        padding-left: 16%;
+        
+    }
+    .education_bg1{
+        width: 500px;
+    }
+    
+}
+.education_bg1 p a{
+    color: rgb(254, 0, 203);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* Project */
+
+.project_bg{
+    background-color: #080729;
+}
+.project_h1{
+    text-align: center;
+}
+.project_container{
+    border: 1px solid #fe00cb;
+    padding: 25px;
+    border-radius: 10px;
+    color: whitesmoke;
+    list-style-type: none;
+}
+.project_container div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.project_container div a{
+    color: #fe00cb;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+.skill_container h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+.skills div{
+    
+    width: 80px;
+    text-align: center;
+    border-width: 1px;
+    margin-left: 60px;
+    color: whitesmoke;
+    transition: .6s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.skills div:hover{
+    transform: scale(1.1);
+    background-color: #fc56da;
+}
+.skills div p{
+    margin-top: 5px;
+}
+
+
+/*Contact*/
+
+.contact_container{
+    
+    background-color: #14133a;
+    padding: 20px;
+}
+.contact_container h1{
+    text-align: center;
+}
+.contact_bg {
+    border: #fe00cb solid 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 200px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_bg i{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(254, 0, 203);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    transition: .4s ease-in-out;
+}
+.contact_bg i:hover{
+    background-color: rgb(254, 0, 203);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgb(254, 0, 203);
+}
+.text_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.text_contact input{
+    margin-top: 20px;
+    width:500px;
+    height: 50px;
+    padding: 20px;
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+.text_contact input:hover, .text_contact textarea:hover{
+    border-color: #fe00cb;
+}
+.text_contact textarea{
+    width:500px;
+    height: 200px;
+    background-color: transparent;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: whitesmoke;
+    padding: 20px;
+
+}
+.text_contact button{
+    margin-top: 20px;
+    background-color: #fe00cb;
+    border-style: none;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
